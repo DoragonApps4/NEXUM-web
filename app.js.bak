@@ -2,21 +2,6 @@ const API = "https://ywcrowviufbioeqixwrq.supabase.co";
 const KEY = "sb_publishable_7YgYWeWv9XxpXP54gLBLRA_j_Nc-dih";
 const SITE_URL = "https://nexumapps.github.io/";
 const RESET_URL = "https://nexumapps.github.io/reset-password.html";
-
-// If Auth returns a recovery session to the site root, forward it to the dedicated reset page.
-// Preserve the hash/query because Supabase may place the recovery token there.
-(function redirectRecoveryToReset(){
-  const h=new URLSearchParams(location.hash.replace(/^#/,""));
-  const q=new URLSearchParams(location.search);
-  const type=h.get("type")||q.get("type");
-  const access=h.get("access_token")||q.get("access_token");
-  const recoveryError=h.get("error")||q.get("error");
-  const recoveryCode=h.get("code")||q.get("code");
-  if((type==="recovery"&&access)||recoveryError||recoveryCode){
-    const target=RESET_URL+(location.hash||"")+(location.search && !location.hash ? location.search : "");
-    if(location.href!==target) location.replace(target);
-  }
-})();
 const APP_VERSION = "5.0";
 
 const $ = id => document.getElementById(id);
