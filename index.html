@@ -1,26 +1,108 @@
 <!doctype html>
-<html lang="es"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#070a12"><title>NEXUM</title><link rel="stylesheet" href="styles.css">
-</head><body><main class="shell">
-<section class="hero"><div class="brand">NX</div><p class="eyebrow">NEXUM · TALLER MULTISERVICIOS</p>
-<h1>Donde los problemas<br><span>encuentran solución.</span></h1>
-<p class="lead">Reparación electrónica, electrodomésticos, energía, movilidad y adaptaciones.</p>
-<a class="btn primary" href="#acceso">Entrar a NEXUM</a></section>
-<section id="acceso" class="card"><p class="tag">MI NEXUM</p><h2>Acceso a tu cuenta</h2>
-<form id="loginForm"><label>Usuario o correo<input id="identifier" autocomplete="username" required></label>
-<label>Contraseña<input id="password" type="password" autocomplete="current-password" required></label>
-<button class="btn primary full">Entrar</button></form><div id="loginMsg" class="msg" hidden></div>
-<p class="center"><a href="#recuperar" id="showRecovery">¿Olvidaste tu contraseña?</a></p>
-<div id="recoveryPanel" hidden><hr><h3>Recuperar contraseña</h3>
-<p class="muted">Te enviaremos un enlace para crear una nueva contraseña.</p>
-<form id="recoveryForm"><label>Correo electrónico<input id="recoveryEmail" type="email" autocomplete="email" required></label>
-<button class="btn secondary full">Enviar enlace</button></form><div id="recoveryMsg" class="msg" hidden></div></div>
-</section>
-<section class="services"><p class="tag">NEXUM</p><h2>Soluciones reales</h2>
-<div class="grid"><article><b>Electrónica</b><span>Placas, fuentes, control y reparación especializada.</span></article>
-<article><b>Electrodomésticos</b><span>Diagnóstico y reparación de equipos del hogar.</span></article>
-<article><b>Energía</b><span>Inversores, baterías, cargadores y estaciones.</span></article>
-<article><b>Adaptaciones</b><span>Proyectos y soluciones a medida.</span></article></div></section>
-<footer>NEXUM · Problema → Diagnóstico → Conocimiento → Solución</footer>
-</main><script src="app.js"></script></body></html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050811">
+  <meta name="description" content="NEXUM — Taller multiservicios. Reparación electrónica, electrodomésticos, energía, movilidad y soluciones a medida.">
+  <title>NEXUM · Donde encuentras la solución</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+
+  <header class="site-header">
+    <a class="brand-mini" href="#inicio" aria-label="NEXUM inicio">
+      <img src="assets/nexum-symbol-dark.svg" alt="NEXUM">
+      <span>NEXUM</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#acceso">Mi NEXUM</a>
+    </nav>
+    <a class="nav-cta" href="#acceso">Entrar</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <div class="kicker"><span class="pulse"></span>TALLER MULTISERVICIOS · NEXUM</div>
+        <h1>Donde encuentras<br><em>la solución.</em></h1>
+        <p class="hero-lead">Reparación electrónica, electrodomésticos, energía, movilidad y adaptaciones. Un mismo lugar para problemas que necesitan conocimiento y una solución real.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#acceso">Entrar a NEXUM <span>→</span></a><a class="btn btn-ghost" href="#servicios">Ver servicios</a></div>
+        <div class="hero-note"><span>PROBLEMA</span><b>→</b><span>DIAGNÓSTICO</span><b>→</b><span>CONOCIMIENTO</span><b>→</b><strong>SOLUCIÓN</strong></div>
+      </div>
+      <div class="hero-visual">
+        <div class="logo-card">
+          <div class="logo-glow"></div>
+          <img src="assets/nexum-lockup-dark.svg" alt="NEXUM · Donde encuentras la solución" class="main-logo">
+          <div class="visual-caption"><span>PRECISIÓN</span><span>CONOCIMIENTO</span><span>SOLUCIÓN</span></div>
+        </div>
+        <div class="floating-chip chip-one"><span class="dot"></span> Reparación especializada</div>
+        <div class="floating-chip chip-two">ELECTRÓNICA · ENERGÍA</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>01</strong><span>Diagnóstico técnico</span></div><div><strong>02</strong><span>Reparación responsable</span></div><div><strong>03</strong><span>Seguimiento de tu equipo</span></div><div><strong>04</strong><span>Atención NEXUM</span></div>
+    </section>
+
+    <section id="servicios" class="section-pad section-block">
+      <div class="section-heading"><div><span class="section-label">01 · SERVICIOS</span><h2>Soluciones que parten<br>del problema real.</h2></div><p>No vendemos una respuesta genérica. Analizamos el equipo, determinamos la causa y trabajamos sobre una solución técnicamente viable.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-feature"><div class="service-number">01</div><div class="service-icon">⌁</div><h3>Electrónica</h3><p>Placas, fuentes, control, potencia y fallas electrónicas complejas.</p><div class="service-tags"><span>Placas</span><span>Control</span><span>Potencia</span></div></article>
+        <article class="service-card"><div class="service-number">02</div><div class="service-icon">◫</div><h3>Electrodomésticos</h3><p>Diagnóstico y reparación de equipos del hogar y cocina.</p><div class="service-tags"><span>Arroceras</span><span>Ollas</span><span>Microondas</span></div></article>
+        <article class="service-card"><div class="service-number">03</div><div class="service-icon">⌁</div><h3>Energía</h3><p>Inversores, baterías, cargadores y estaciones de energía.</p><div class="service-tags"><span>Inversores</span><span>BMS</span><span>Cargadores</span></div></article>
+        <article class="service-card"><div class="service-number">04</div><div class="service-icon">↗</div><h3>Adaptaciones</h3><p>Proyectos especiales cuando la solución estándar no basta.</p><div class="service-tags"><span>Diseño</span><span>Modificación</span><span>Soluciones</span></div></article>
+      </div>
+    </section>
+
+    <section id="proceso" class="section-pad process-section">
+      <div class="section-heading compact"><div><span class="section-label">02 · MÉTODO</span><h2>Del problema<br>al resultado.</h2></div><p>La reparación no comienza cambiando piezas. Comienza entendiendo qué está ocurriendo.</p></div>
+      <div class="process-line">
+        <article><span>01</span><h3>Recibimos</h3><p>Identificamos el equipo, sus datos y el motivo de la visita.</p></article>
+        <article><span>02</span><h3>Diagnosticamos</h3><p>Buscamos la causa de la falla antes de proponer una reparación.</p></article>
+        <article><span>03</span><h3>Resolvemos</h3><p>Aplicamos una reparación o adaptación técnicamente viable.</p></article>
+        <article><span>04</span><h3>Entregamos</h3><p>Registramos el resultado y mantenemos el historial del equipo.</p></article>
+      </div>
+    </section>
+
+    <section id="acceso" class="access-section section-pad">
+      <div class="access-intro"><span class="section-label">03 · MI NEXUM</span><h2>Tu equipo.<br>Tu historial.<br><em>Tu NEXUM.</em></h2><p>Cuando tengas una cuenta podrás consultar tus equipos y reparaciones desde un mismo lugar.</p><div class="access-points"><span>✓ Tus equipos</span><span>✓ Estado de reparaciones</span><span>✓ Notificaciones</span><span>✓ Historial seguro</span></div></div>
+      <div class="auth-card" id="authCard">
+        <div class="auth-top"><div><span class="section-label">ACCESO SEGURO</span><h3 id="authTitle">Entrar a tu cuenta</h3></div><div class="secure-badge">● NEXUM</div></div>
+        <div class="auth-tabs"><button class="auth-tab active" data-auth="login">Entrar</button><button class="auth-tab" data-auth="signup">Crear cuenta</button></div>
+        <form id="loginForm" class="auth-form">
+          <label>Usuario o correo<input id="identifier" autocomplete="username" placeholder="usuario o correo electrónico" required></label>
+          <label>Contraseña<input id="password" type="password" autocomplete="current-password" placeholder="Tu contraseña" required></label>
+          <button class="btn btn-primary full" type="submit">Entrar <span>→</span></button>
+          <button class="text-btn" type="button" id="showRecovery">¿Olvidaste tu contraseña?</button>
+        </form>
+        <form id="signupForm" class="auth-form" hidden>
+          <label>Nombre<input id="signupName" autocomplete="name" placeholder="Tu nombre" required></label>
+          <label>Usuario NEXUM<input id="signupUsername" autocomplete="username" placeholder="ej. carlos_123" pattern="[a-z0-9_]{3,30}" required><small>3–30 caracteres: minúsculas, números o _</small></label>
+          <label>Correo electrónico<input id="signupEmail" type="email" autocomplete="email" placeholder="correo@ejemplo.com" required></label>
+          <label>Contraseña<input id="signupPassword" type="password" autocomplete="new-password" placeholder="Mínimo 8 caracteres" required></label>
+          <button class="btn btn-primary full" type="submit">Crear cuenta <span>→</span></button>
+        </form>
+        <form id="recoveryForm" class="auth-form" hidden>
+          <button class="back-auth" type="button" id="backToLogin">← Volver al acceso</button>
+          <h4>Recuperar contraseña</h4><p class="form-help">Te enviaremos un enlace para crear una nueva contraseña.</p>
+          <label>Correo electrónico<input id="recoveryEmail" type="email" autocomplete="email" placeholder="correo@ejemplo.com" required></label>
+          <button class="btn btn-secondary full" type="submit">Enviar enlace</button>
+        </form>
+        <div id="authMsg" class="msg" hidden></div>
+        <div class="auth-foot">Tus credenciales son gestionadas por <strong>Supabase Auth</strong>. NEXUM no almacena tu contraseña.</div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard section-pad" hidden>
+      <div class="dashboard-head"><div><span class="section-label">MI NEXUM</span><h2 id="dashboardGreeting">Bienvenido.</h2></div><button id="logoutBtn" class="btn btn-ghost">Cerrar sesión</button></div>
+      <div class="dashboard-grid"><article class="dash-card"><span class="dash-label">CUENTA</span><strong id="profileName">—</strong><span id="profileUsername">—</span></article><article class="dash-card"><span class="dash-label">EQUIPOS</span><strong id="equipmentCount">0</strong><span>registrados en tu cuenta</span></article><article class="dash-card"><span class="dash-label">REPARACIONES</span><strong id="ticketCount">0</strong><span>en tu historial</span></article></div>
+      <div class="empty-panel"><div class="empty-mark">NX</div><h3>Tu espacio NEXUM está listo.</h3><p>Los módulos de equipos, reparaciones y notificaciones se irán habilitando sobre la misma cuenta.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><img src="assets/nexum-wordmark.svg" alt="NEXUM"><div><span>PROBLEMA → DIAGNÓSTICO → CONOCIMIENTO → SOLUCIÓN</span><small>© NEXUM · Taller multiservicios</small></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

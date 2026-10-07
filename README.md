@@ -1,18 +1,25 @@
-# NEXUM Web — GitHub Pages
+# NEXUM Web Frontend
 
-Frontend estático inicial de NEXUM.
+Static frontend for GitHub Pages + Supabase.
 
-Incluye:
-- Página principal.
-- Login mediante `login-with-username`.
-- Solicitud de recuperación.
-- `nueva-contrasena.html` para completar la recuperación de Supabase.
-- Solo usa la publishable key; no contiene `service_role` ni secretos.
+## Architecture
+- GitHub Pages: static frontend
+- Supabase Auth: authentication and sessions
+- Supabase REST API: customer/profile data
+- Edge Function: `login-with-username`
 
-## Importante
-La URL final de GitHub Pages debe añadirse en Supabase Authentication > URL Configuration.
+## Public technical names
+- `reset-password.html`
+- `reset-password.js`
+- English route/file/API naming
+- Spanish user-facing copy
 
-La URL de recuperación será:
-`https://USUARIO.github.io/nexum-web/nueva-contrasena.html`
+## Security
+Only the Supabase publishable key is included in the browser. Never add a service-role/secret key here.
 
-GitHub Pages publica el sitio en Internet aunque el repositorio de origen sea privado cuando el plan permite Pages para repositorios privados. No subir nunca contraseñas, tokens, service_role/secret key ni datos de clientes.
+## Recovery redirect
+Supabase Auth should allow:
+`https://nexumapps.github.io/reset-password.html`
+
+## Deploy
+Upload the contents of this folder to the root of the GitHub Pages repository and deploy from `main` / root.
